@@ -1,0 +1,4 @@
+resources:
+  - gotk-components.yml
+  - gotk-source.yml
+  - gotk-sync.yml
