@@ -15,6 +15,6 @@ spec:
   timeout: 2m
   values:
     grafana:
-      enabled: false
+      enabled: true
     prometheus:
-      enabled: false
+      enabled: true
