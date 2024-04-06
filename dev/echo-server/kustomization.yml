@@ -1,0 +1,12 @@
+resources:
+  - deployment.yml
+  - service.yml
+
+configMapGenerator:
+  - files:
+      - configs.env
+    name: echo-server
+
+images:
+  - name: jmalloc/echo-server
+    newTag: 0.3.6
