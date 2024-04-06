@@ -9,6 +9,6 @@ configMapGenerator:
 
 images:
   - name: jmalloc/echo-server
-    newTag: 0.3.6
+    newTag: non-existent-tag
 
 namespace: default
