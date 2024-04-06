@@ -4,11 +4,11 @@ metadata:
   name: k8s
   namespace: flux-system
 spec:
-  interval: 10m
+  interval: 10s
   path: ./dev
   prune: true
   sourceRef:
     kind: GitRepository
     name: flux-system
-  timeout: 10m
+  timeout: 2m
   wait: true
