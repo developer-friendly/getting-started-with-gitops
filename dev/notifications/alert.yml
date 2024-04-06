@@ -1,0 +1,25 @@
+apiVersion: notification.toolkit.fluxcd.io/v1beta3
+kind: Alert
+metadata:
+  name: alert
+  namespace: flux-system
+spec:
+  eventSeverity: error
+  eventMetadata:
+    severity: error
+  eventSources:
+  - kind: GitRepository
+    name: '*'
+    namespace: flux-system
+  - kind: Kustomization
+    name: '*'
+    namespace: flux-system
+  - kind: HelmRelease
+    name: '*'
+    namespace: monitoring
+  - kind: Kustomization
+    name: '*'
+    namespace: default
+  providerRef:
+    name: alertmanager
+  summary: FluxCD reconciliation error

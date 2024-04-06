@@ -1,3 +1,5 @@
 resources:
   - alertmanager-address.yml
   - alertmanager.yml
+  - error.yml
+  - info.yml
