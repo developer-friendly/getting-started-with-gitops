@@ -5,10 +5,10 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m
-  timeout: 10m
+  path: ./monitoring
   prune: true
-  wait: true
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: ./monitoring
+  timeout: 10m
+  wait: true
