@@ -4,5 +4,5 @@ metadata:
   name: alertmanager-address
   namespace: flux-system
 stringData:
-  address: http://prometheus-alertmanager.monitoring:9093/api/v2/alerts
+  address: http://loki-stack-alertmanager.monitoring:9093/api/v2/alerts
 type: Opaque
